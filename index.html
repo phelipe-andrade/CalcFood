@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <title>Calc Food - Calcule a quantidade de comida por pessoa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+
+<!-- menu  -->
+
+<body>
+  <header class="bg_header">
+    <div class="menu_geral">
+      <div><a href="#home"></a><img src="img/LOGO QPP.png" alt="Quanto por pessoa"></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="receitas.html">Receitas</a></li>
+          <li><a href="conversor.html">Conversor</a></li>
+          <li><a href="envie.html">Envie sua receita</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- titulo  -->
+
+  <div class="bg_titulo">
+    <h1>Calcule o seu buffet</h1>
+  </div>
+
+  <!-- eventos  -->
+
+  <section class="bg_secoes">
+    <div class="evento_geral">
+      <div>
+        <h2 class="detalhes">escolha o tipo de evento</h2>
+      </div>
+      <div>
+        <ul class="lista_evento">
+          <li>
+            <button>
+              <p class="casamento">Casamento</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p class="aniversario">Aniversário</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p class="festa">Festa</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p class="reuniao">Reunião</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p class="churrasco">Churrasco</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p class="almoco">Almoço</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p class="janta">Jantar</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p class="fralda">Chá de fralda</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p class="panela">Chá de panela</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p class="cafe_manha">Café da manha</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRATOS  -->
+
+  <section class="bg_secoes">
+    <div class="pratos_geral resultadoGeral">
+      <div class="organizar">
+        <h2 class="detalhes">escolha os pratos</h2>
+      </div>
+      <div class="opcoes_pratos">
+        <div class="carne_geral">
+          <div>
+            <h3>CARNE</h3>
+          </div>
+          <ul>
+            <li class="bovino">
+              <button>
+                <p>Bovina</p>
+              </button>
+            </li>
+            <li class="frango">
+              <button>
+                <p>Frango</p>
+              </button>
+            </li>
+            <li class="suina">
+              <button>
+                <p>Suína</p>
+              </button>
+            </li>
+            <li class="peixe">
+              <button>
+                <p>Peixe</p>
+              </button>
+            </li>
+            <li class="camarao">
+              <button>
+                <p>Camarão</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="divisao1"></div>
+        <div class="guarnicao_geral">
+          <div>
+            <h3>GUANIÇÃO</h3>
+          </div>
+          <ul>
+            <li class="arroz">
+              <button>
+                <p>Arroz</p>
+              </button>
+            </li>
+            <li class="feijao">
+              <button>
+                <p>Feijão</p>
+              </button>
+            </li>
+            <li class="macarrao">
+              <button>
+                <p>Macarrão</p>
+              </button>
+            </li>
+            <li class="pure">
+              <button>
+                <p>Puré</p>
+              </button>
+            </li>
+            <li class="farofa">
+              <button>
+                <p>Farofa</p>
+              </button>
+            </li>
+            <li class="salada">
+              <button>
+                <p>Salada</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="divisao2"></div>
+        <div class="doces_geral">
+          <div>
+            <h3>DOCES</h3>
+          </div>
+          <ul>
+            <li class="bolo">
+              <button>
+                <p>Bolo</p>
+              </button>
+            </li>
+            <li class="doces">
+              <button>
+                <p>Doces</p>
+              </button>
+            </li>
+            <li class="cupcake">
+              <button>
+                <p>Cupcake</p>
+              </button>
+            </li>
+            <li class="mouse">
+              <button>
+                <p>Mouse</p>
+              </button>
+            </li>
+            <li class="pudim">
+              <button>
+                <p>Pudim</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="divisao3"></div>
+        <div class="lanches_geral">
+          <div>
+            <h3>LANCHES</h3>
+          </div>
+          <ul>
+            <li class="salgados">
+              <button>
+                <p>Salgadinhos fritos</p>
+              </button>
+            </li>
+            <li class="pizza">
+              <button>
+                <p>Pizza</p>
+              </button>
+            </li>
+            <li class="hotdog">
+              <button>
+                <p>Hotdog</p>
+              </button>
+            </li>
+            <li class="pipoca">
+              <button>
+                <p>Pipoca</p>
+              </button>
+            </li>
+            <li class="batata">
+              <button>
+                <p>Batata frita</p>
+              </button>
+            </li>
+            <li class="pastel">
+              <button>
+                <p>Pastel</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEBIDAS  -->
+
+  <section class="bg_secoes">
+    <div class="bebida_geral resultadoGeral">
+      <div>
+        <h2 class="detalhes">escolha as bebidas</h2>
+      </div>
+      <div>
+        <ul>
+          <li class="refrigerante">
+            <button>
+              <p>refrigerante</p>
+            </button>
+          </li>
+          <li class="agua">
+            <button>
+              <p>água</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p>suco</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p>cerveja</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p>vinho</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p>champanhe</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p>vodka</p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <p>whisky</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informações do evento -->
+
+  <section class="bg_secoes">
+    <div class="pessoas_geral">
+      <div>
+        <h2 class="detalhes">informações do evento</h2>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <div class="qtd_pessoas">
+              <h3>Adultos</h3>
+            </div>
+            <div>
+              <button>-</button>
+              <input id="numeroDePessoas" name="numeroDePessoas" type="number" value="0">
+              <button>+</button>
+            </div>
+          </li>
+          <li>
+            <div class="qtd_pessoas criancas">
+              <h3>Crianças</h3>
+            </div>
+            <div>
+              <button>-</button>
+              <input id="numeroDePessoas" name="numeroDePessoas" type="number" value="0">
+              <button>+</button>
+            </div>
+          </li>
+          <li>
+            <div class="qtd_pessoas duracao">
+              <h3>Duração</h3>
+            </div>
+            <div>
+              <button>-</button>
+              <input id="numeroDePessoas" name="numeroDePessoas" type="number" value="0">
+              <button>+</button>
+            </div>
+          </li>
+          <li>
+            <div class="qtd_pessoas">
+              <h3>Período</h3>
+            </div>
+            <div class="periodoDoDia">
+              <button class="manha">Manha</button>
+              <button class="tarde">Tarde</button>
+              <button class="noite">Noite</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resultados -->
+
+  <section class="bg_secoes">
+    <div class="resultado">
+      <div>
+        <h2 class="detalhes">resultado</h2>
+      </div>
+      <div class="resultado_tipos">
+        <div class="divAtivo">
+          <h3>carne/guarnição</h3>
+          <div class="resultado_carne">
+            <ul class="rtg">
+              <li class="bov">Bovina: </li>
+              <li class="fran">Frango:</li>
+              <li class="sui">Suína:</li>
+              <li class="pei">Peixe:</li>
+              <li class="cam">Camarão:</li>
+              <li class="arr">Arroz:</li>
+              <li class="fei">Feijão:</li>
+              <li class="mac">Macarrão:</li>
+              <li class="pur">Puré:</li>
+              <li class="far">Farofa:</li>
+              <li class="sal">Salada:</li>
+            </ul>
+            <div class="resultadoValores carne-guarnicao">
+              <ul>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="divisao1-1"></div>
+        <div class="divAtivo">
+          <h3>doces</h3>
+          <div class="resultado_doces">
+            <ul class="rtg">
+              <li class="bol">Bolo:</li>
+              <li class="doc">Doces:</li>
+              <li class="cup">Cupcake:</li>
+              <li class="mou">Mouse:</li>
+              <li class="pud">Pudim:</li>
+            </ul>
+            <div class="resultadoValores docesR">
+              <ul>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="divisao2-1"></div>
+        <div class="divAtivo">
+          <h3>lanches</h3>
+          <div class="resultado_lanches">
+            <ul class="rtg">
+              <li class="salg">Salgadinhos:</li>
+              <li class="piz">Pizza:</li>
+              <li class="hot">Hotdog:</li>
+              <li class="pip">Pipoca:</li>
+              <li class="bat">Batata frita:</li>
+              <li class="pas">Pastel:</li>
+            </ul>
+            <div class="resultadoValores lanchesR">
+              <ul>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="divisao3-1"></div>
+        <div class="divAtivo">
+          <h3>babidas</h3>
+          <div class="resultado_bebidas">
+            <ul class="rtg">
+              <li class="ref">Refrigerante:</li>
+              <li class="agu">Água:</li>
+              <li class="suc">Suco:</li>
+              <li class="cer">Cerveja:</li>
+              <li class="vin">Vinho:</li>
+              <li class="cha">Champanhe:</li>
+              <li class="vod">Vodka:</li>
+              <li class="whi">Whisky:</li>
+            </ul>
+            <div class="resultadoValores bebidasR">
+              <ul>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+                <li>0</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="area_interna">
+      <div>
+        <h3>Receitas</h3>
+        <ul>
+          <li>Todas</li>
+          <li>Rápidas</li>
+          <li>Micro_ondas</li>
+          <li>Vegetarianas</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sobre</h3>
+        <ul>
+          <li>Quem somos</li>
+          <li>Anuncie</li>
+          <li>Termos de uso</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+      <div class="divisao1"></div>
+      <form action="./enviar.php">
+        <h3>Ajude-nos a melhorar</h3>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <button id="enviar" name="enviar" type="submit" class="btn btn-preto"> Enviar </button>
+      </form>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

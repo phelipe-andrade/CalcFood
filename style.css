@@ -1,0 +1,1006 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg_secoes {
+  text-align: center;
+  max-width: 960px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detalhes {
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+
+.detalhes:after,
+.detalhes:before {
+  content: " ";
+  border-bottom: 3px solid #ff6c40;
+  display: block;
+  width: 60px;
+  margin: 5px auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Menu   */
+.bg_header {
+  background: #ff6c40;
+}
+
+.menu_geral {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.bg_header img {
+  max-height: 50px;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
+  color: white;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li:nth-last-child(1) {
+  margin-right: 20px;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+/* Titulo */
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  line-height: 44px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 40px auto;
+  color: #716e6e;
+}
+
+h1::after,
+h1::before {
+  content: " ";
+  border-bottom: 3px solid #ff6c40;
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+}
+
+.bg_titulo {
+  margin: 0 10px 0 10px;
+}
+
+/* Eventos */
+
+.evento_geral {
+  background: white;
+  max-width: 940px;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #a9abac;
+  padding-top: 20px;
+}
+
+.evento_geral ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.evento_geral ul li {
+  background: #d9e0e6;
+  height: 102px;
+  border-radius: 10px;
+  margin: 0 10px 20px 10px;
+}
+
+.evento_geral button {
+  background: #d9e0e6;
+  border: none;
+  width: 130px;
+  height: 102px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+  font-size: 0.85rem;
+  color: black;
+  padding: 0;
+}
+
+.evento_geral ul li button p {
+  flex-grow: 1;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
+.evento_geral ul li button:hover {
+  background: #a9abac;
+  color: white;
+}
+
+.evento_geral .evento_ativado button:hover {
+  background: #09b386;
+  color: white;
+}
+
+/* icon eventos*/
+
+.casamento::before {
+  content: url(./img/casamento.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.casamento:hover::before {
+  content: url(./img/casamento-branco.svg);
+}
+.evento_ativado .casamento::before {
+  content: url(./img/casamento-branco.svg);
+}
+
+/*---------------*/
+
+.aniversario::before {
+  content: url(./img/aniversario.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.aniversario:hover::before {
+  content: url(./img/aniversario-branco.svg);
+}
+
+.evento_ativado .aniversario::before {
+  content: url(./img/aniversario-branco.svg);
+}
+
+/*---------------*/
+
+.festa::before {
+  content: url(./img/festa.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.festa:hover::before {
+  content: url(./img/festa-branco.svg);
+}
+
+.evento_ativado .festa::before {
+  content: url(./img/festa-branco.svg);
+}
+
+/*---------------*/
+
+.reuniao::before {
+  content: url(./img/reuniao.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 7px 0 8px 0;
+}
+
+.reuniao:hover::before {
+  content: url(./img/reuniao-branco.svg);
+}
+
+.evento_ativado .reuniao::before {
+  content: url(./img/reuniao-branco.svg);
+}
+
+/*---------------*/
+
+.churrasco::before {
+  content: url(./img/churrasco.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.churrasco:hover::before {
+  content: url(./img/churrasco-branco.svg);
+}
+
+.evento_ativado .churrasco::before {
+  content: url(./img/churrasco-branco.svg);
+}
+
+/*---------------*/
+
+.almoco::before {
+  content: url(./img/janta.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.almoco:hover::before {
+  content: url(./img/janta-branco.svg);
+}
+
+.evento_ativado .almoco::before {
+  content: url(./img/janta-branco.svg);
+}
+
+/*---------------*/
+
+.janta::before {
+  content: url(./img/janta.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.janta:hover::before {
+  content: url(./img/janta-branco.svg);
+}
+
+.evento_ativado .janta::before {
+  content: url(./img/janta-branco.svg);
+}
+
+/*---------------*/
+
+.fralda::before {
+  content: url(./img/fralda.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.fralda:hover::before {
+  content: url(./img/fralda_branca.svg);
+}
+
+.evento_ativado .fralda::before {
+  content: url(./img/fralda_branca.svg);
+}
+
+/*---------------*/
+
+.panela::before {
+  content: url(./img/panela.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.panela:hover::before {
+  content: url(./img/panela_branca.svg);
+}
+.evento_ativado .panela::before {
+  content: url(./img/panela_branca.svg);
+}
+
+/*---------------*/
+
+.cafe_manha::before {
+  content: url(./img/cafe-da-manha.svg);
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.cafe_manha:hover::before {
+  content: url(./img/cafe-da-manha-branco.svg);
+}
+
+.evento_ativado .cafe_manha::before {
+  content: url(./img/cafe-da-manha-branco.svg);
+}
+
+/*---------------*/
+
+.evento_ativado button {
+  background: #09b386;
+  color: white;
+}
+
+/* pratos */
+
+.pratos_geral {
+  background: white;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #a9abac;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.opcoes_pratos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 940px;
+  justify-content: space-around;
+}
+
+.opcoes_pratos h3 {
+  font-size: 1.125rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+  color: black;
+  line-height: 1.5em;
+}
+
+.opcoes_pratos h3::after {
+  content: " ";
+  border-bottom: 1px solid #ff6c40;
+  display: block;
+  width: 60px;
+  margin: 3px auto;
+}
+
+.opcoes_pratos ul li {
+  margin-bottom: 20px;
+}
+
+.opcoes_pratos button {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+  color: black;
+  border: none;
+  background: #d9e0e6;
+  width: 160px;
+  height: 42px;
+  border-radius: 10px;
+}
+
+.opcoes_pratos p {
+  flex-grow: 1;
+}
+
+.opcoes_pratos button:hover {
+  background: #a9abac;
+  color: white;
+}
+
+.opcoes_pratos .pratos_ativados button:hover,
+.bebida_geral .pratos_ativados button:hover {
+  background: #09b386;
+  color: white;
+}
+
+.divisao1,
+.divisao2,
+.divisao3 {
+  content: " ";
+  border-left: 1px solid #ff6c40;
+  height: 300px;
+  align-self: center;
+}
+
+.organizar {
+  max-height: 50px;
+}
+
+.opcoes_pratos .pratos_ativados button,
+.bebida_geral .pratos_ativados button {
+  background: #09b386;
+  color: white;
+}
+
+/* bebidas */
+
+.bebida_geral {
+  background: white;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #a9abac;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.bebida_geral ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bebida_geral ul li {
+  margin: 0 10px 20px 10px;
+}
+
+.bebida_geral button {
+  border: none;
+  background: #d9e0e6;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+  text-transform: capitalize;
+  color: black;
+  width: 210px;
+  height: 56px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bebida_geral ul li button:hover {
+  color: white;
+  background: #a9abac;
+}
+
+.bebida_geral .bebida_ativada button:hover {
+  color: white;
+  background: #09b386;
+}
+
+.bebida_geral .bebida_ativada button {
+  color: white;
+  background: #09b386;
+}
+
+/* Pessoas */
+
+.pessoas_geral {
+  background: white;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #a9abac;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.pessoas_geral ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pessoas_geral ul li {
+  margin: 0 10px 20px 10px;
+}
+
+.pessoas_geral ul li .qtd_pessoas {
+  background: #d9e0e6;
+  width: 210px;
+  height: 56px;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.pessoas_geral ul li .qtd_pessoas h3 {
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: black;
+}
+
+.pessoas_geral ul li div:nth-child(2) {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.pessoas_geral input {
+  width: 72px;
+  height: 30px;
+  border: none;
+  background: #d9e0e6;
+  text-align: center;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+.pessoas_geral input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.pessoas_geral input:nth-child() {
+  background-color: #09b386;
+}
+
+.pessoas_geral button {
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  background: #716e6e;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.pessoas_geral button:nth-child(3) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pessoas_geral button:hover {
+  background-color: #09b386;
+}
+
+.pessoas_geral .periodoDoDia {
+  width: 210px;
+  display: flex;
+}
+.pessoas_geral .periodoDoDia button {
+  width: 70px;
+  height: 30px;
+  border: none;
+  line-height: 16px;
+  padding: 6px 0 6px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  background: #716e6e;
+  color: white;
+}
+
+.pessoas_geral .periodoDoDia button:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.pessoas_geral .periodoDoDia button:nth-child(2) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.pessoas_geral .periodoDoDia button:nth-child(3) {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pessoas_geral .periodoDoDia button:hover {
+  background: #09b386;
+}
+
+.pessoas_geral .periodoDoDia .periodo_ativado {
+  background: #09b386;
+}
+
+/* resultado */
+
+.resultado {
+  background: white;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px #a9abac;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.resultado .resultado_tipos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 940px;
+  text-align: center;
+}
+
+.resultado .resultado_tipos {
+  margin: 0 20px 0 20px;
+  justify-content: space-around;
+  align-content: center;
+  flex: 1;
+}
+
+.resultado .resultado_tipos h3 {
+  margin: 0px;
+  font-size: 1.125rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+  text-transform: uppercase;
+  color: black;
+  width: 207px;
+}
+
+.resultado .resultado_tipos h3::after {
+  content: " ";
+  border-bottom: 1px solid #ff6c40;
+  display: block;
+  width: 60px;
+  margin: 5px auto;
+}
+
+.resultado .resultado_carne,
+.resultado .resultado_doces,
+.resultado .resultado_lanches,
+.resultado .resultado_bebidas {
+  width: 207px;
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  text-align: start;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resultado .resultado_carne li,
+.resultado .resultado_doces li,
+.resultado .resultado_lanches li,
+.resultado .resultado_bebidas li,
+.resultado .resultadoValores li {
+  margin: 10px 0;
+}
+
+.resultado .resultado_carne li::before,
+.resultado .resultado_doces li::before,
+.resultado .resultado_lanches li::before,
+.resultado .resultado_bebidas li::before {
+  content: " ";
+  display: inline-block;
+  margin: 2px 0;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  background: #09b386;
+  border-radius: 5px;
+}
+
+.resultado .resultadoValores li::before {
+  display: none;
+}
+
+.resultado .resultado_tipos li,
+.resultado .resultado_tipos .divAtivo {
+  display: none;
+}
+
+.resultado .resultado_tipos li.ativo,
+.resultado .resultado_tipos .divAtivo.ativo {
+  display: block;
+}
+
+.carne-guarnicao li.ativo::after {
+  content: "kg";
+  display: inline-block;
+}
+
+.docesR li.ativo::after {
+  content: "un";
+  display: inline-block;
+}
+
+.docesR li.ativo:nth-child(1)::after,
+.docesR li.ativo:nth-child(n + 4)::after {
+  content: "kg";
+}
+
+.lanchesR li.ativo::after {
+  content: "un";
+  display: inline-block;
+}
+
+.lanchesR li.ativo:nth-child(4)::after,
+.lanchesR li.ativo:nth-child(5)::after {
+  content: "kg";
+}
+
+.bebidasR li.ativo::after {
+  content: "L";
+  display: inline-block;
+}
+
+.divisao1-1,
+.divisao2-1,
+.divisao3-1 {
+  content: " ";
+  border-left: 1px solid #ff6c40;
+  height: 80%;
+  align-self: center;
+  display: none;
+}
+
+/* Footer */
+
+footer {
+  background: #ff6c40;
+  display: flex;
+  justify-content: center;
+}
+
+.area_interna {
+  width: 700px;
+  max-width: 940px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+}
+
+.area_interna div:nth-child(1) {
+  margin-left: 10px;
+}
+
+.area_interna h3 {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 1.125rem;
+  color: white;
+}
+
+.area_interna h3::after {
+  content: " ";
+  border-bottom: 1px solid white;
+  display: block;
+  width: 60px;
+  margin: 5px 0 15px 0;
+}
+
+.area_interna ul li {
+  font-size: 1rem;
+  line-height: 22px;
+  font-style: medium;
+  color: white;
+  cursor: pointer;
+}
+
+.area_interna ul li:hover {
+  color: black;
+}
+
+.area_interna form {
+  display: block;
+  max-width: 280px;
+  margin: 0px 10px 20px 10px;
+}
+
+.area_interna label {
+  color: white;
+}
+
+.area_interna form input {
+  height: 40px;
+  width: 280px;
+  border: none;
+  margin: 3px 0 10px 0;
+  border-radius: 10px;
+  outline: 0;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+
+.area_interna form textarea {
+  width: 280px;
+  height: 100px;
+  border: none;
+  margin-top: 3px;
+  border-radius: 10px;
+  outline: 0;
+  padding: 10px;
+}
+
+.area_interna .divisao1 {
+  height: 260px;
+  border-left: 1px solid white;
+}
+
+.area_interna button {
+  border: none;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  text-transform: inherit;
+  margin-top: 15px;
+  height: 37px;
+  width: 100px;
+  background: white;
+}
+.area_interna button:hover {
+  background: #09b386;
+  color: white;
+  border: 2px solid white;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 740px) {
+  .divisao3 {
+    display: none;
+  }
+  .doces_geral {
+    margin-right: 11px;
+  }
+  .carne_geral {
+    margin-left: 11px;
+  }
+  .divisao1,
+  .divisao2 {
+    margin: 0 25px 0 25px;
+  }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 720px) {
+  .divisao3 {
+    display: none;
+  }
+
+  .doces_geral {
+    margin-right: 10px;
+  }
+  .carne_geral {
+    margin-left: 10px;
+  }
+  .divisao1,
+  .divisao2 {
+    margin: 0 10px 0 10px;
+  }
+  .menu_geral {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+
+  .menu li a {
+    padding: 15px 0;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 579px) {
+  .divisao2 {
+    display: none;
+  }
+  .divisao3 {
+    display: block;
+  }
+
+  .divisao1,
+  .divisao3 {
+    margin: 0 25px 0 25px;
+  }
+  .guarnicao_geral,
+  .carne_geral {
+    margin-left: 10px;
+  }
+
+  .doces_geral,
+  .lanches_geral {
+    margin-right: 10px;
+  }
+  .opcoes_pratos {
+    justify-content: center;
+  }
+
+  .carne_geral {
+    order: 0;
+  }
+  .divisao1 {
+    order: 1;
+  }
+  .doces_geral {
+    order: 2;
+  }
+
+  .guarnicao_geral {
+    order: 3;
+  }
+
+  .divisao3 {
+    order: 4;
+  }
+  .lanches_geral {
+    order: 5;
+  }
+
+  h1 {
+    font-size: 2rem;
+    max-width: 380px;
+  }
+
+  .bebida_geral button {
+    width: 110px;
+  }
+
+  .menu_geral {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+
+  .menu li a {
+    padding: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .opcoes_pratos button {
+    width: 120px;
+  }
+  .divisao1,
+  .divisao3 {
+    margin: 0;
+  }
+
+  .opcoes_pratos {
+    justify-content: space-around;
+  }
+  .evento_geral button {
+    width: 92px;
+  }
+
+  .doces_geral {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .guarnicao_geral {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .divisao1,
+  .divisao3 {
+    height: 350px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    max-width: 380px;
+  }
+}
