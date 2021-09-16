@@ -3,7 +3,7 @@ const buttonInfo = document.querySelectorAll('.pessoas_geral button');
 const resulPratoSele = document.querySelectorAll('.rtg li');
 const pratoSelecionado = document.querySelectorAll('.resultadoValores li');
 const qtdPessoas = document.querySelectorAll('.pessoas_geral input');
-
+console.log(qtdPessoas);
 //Ativação dos eventos
 function activeEvents() {
   const eventoAtivo = document.querySelectorAll('.lista_evento li');
@@ -43,7 +43,6 @@ function activeFood() {
   const divDoces = Array.from (document.querySelectorAll('.resultado_doces .rtg li'));
   const divLanches = Array.from (document.querySelectorAll('.resultado_lanches .rtg li'));
   const divBebidas = Array.from (document.querySelectorAll('.resultado_bebidas .rtg li'));
-  console.log(divCarne, divDoces, divLanches, divBebidas);
   if (ativacaoPratos.length) {
     function pratosAtivados(i) {
       resulPratoSele[i].classList.toggle('ativo');
@@ -164,6 +163,27 @@ function qtdPessoasF() {
         buttonAtivo(i);
       });
     });
+
+    // Altera o valor do input caso seja escrito pelo usuários sem a utilização dos botões
+    qtdPessoas.forEach((input ,i) =>{
+      input.addEventListener('keyup', ()=>{
+        switch (i) {
+          case 0:
+            valor1 = +input.value;
+            break;
+
+          case 1:
+            valor2 = +input.value;
+            break;
+          
+          case 2:
+            valor3 = +input.value;
+            break;
+        
+        }
+      })
+    })
+    
   }
   
 
@@ -202,9 +222,12 @@ function result(){
   let valores = [0];
   let periodoSelecionado = 1;
   let duracao = 0;
+
   function quantidades (i) {
+
     const pessoas = ((+qtdPessoas[0].value) + ((+qtdPessoas[1].value)*0.5));
     const adultos = (+qtdPessoas[0].value);
+    
     // Ativa o periodo do dia
     switch (i) {
       case 6:
@@ -371,6 +394,11 @@ function result(){
       quantidades(i);
     });
   });
+
+  qtdPessoas.forEach(item => {
+    item.addEventListener('keyup', quantidades)
+  });
+
 }
 
 result();
